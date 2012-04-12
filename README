@@ -22,7 +22,9 @@ Issues:
 
 	The first implementation handles HTML data. It does not automatically handle JSON, XML, or XSL transformations on returned data. These are being developed and tested and will be released shortly.
 
-Special handling for Ajax-enabled widgets is also being developed. The first widgets to be supported will be jQuery UI components. More will be coming shortly.
+	Special handling for Ajax-enabled widgets is also being developed. The first widgets to be supported will be jQuery UI components. More will be coming shortly.
+	
+	
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Dependencies:
 =-=-=-=-=-=-=
