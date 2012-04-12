@@ -10,9 +10,9 @@
 
 Declarative Ajax Toolkit:
 =-=-=-=-=-=-=-=-=-=-=-=-=
-	AjaxML is a set of functions that allow you to declare Ajax behaviour in your web pages with as little coding as possible. In fact, if you have no special needs beyond basic XHR use, you need no code at all.
+    AjaxML is a set of functions that allow you to declare Ajax behaviour in your web pages with as little coding as possible. In fact, if you have no special needs beyond basic XHR use, you need no code at all.
 	
-	The idea is simple. A set of attributes added to your web page elements specify what you need to be done. The javascript code is automatically injected once you include "ajaxml.js" in the page.
+    The idea is simple. A set of attributes added to your web page elements specify what you need to be done. The javascript code is automatically injected once you include "ajaxml.js" in the page.
 
 Issues:
 =-=-=-=
