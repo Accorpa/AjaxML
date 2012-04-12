@@ -16,13 +16,13 @@ Declarative Ajax Toolkit:
 
 Issues:
 =-=-=-=
-	AjaxML can be seen as a small addition to HTML. Although currently reported as invalid in strict XHTML, no exceptions will be raised.
+    AjaxML can be seen as a small addition to HTML. Although currently reported as invalid in strict XHTML, no exceptions will be raised.
 
-	The first implementation uses (and thus requires) jQuery for cross-browser compatibility. Support for other libraries is being considered.
+    The first implementation uses (and thus requires) jQuery for cross-browser compatibility. Support for other libraries is being considered.
 
-	The first implementation handles HTML data. It does not automatically handle JSON, XML, or XSL transformations on returned data. These are being developed and tested and will be released shortly.
+    The first implementation handles HTML data. It does not automatically handle JSON, XML, or XSL transformations on returned data. These are being developed and tested and will be released shortly.
 
-	Special handling for Ajax-enabled widgets is also being developed. The first widgets to be supported will be jQuery UI components. More will be coming shortly.
+    Special handling for Ajax-enabled widgets is also being developed. The first widgets to be supported will be jQuery UI components. More will be coming shortly.
 	
 	
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -30,22 +30,24 @@ Dependencies:
 =-=-=-=-=-=-=
     * jQuery 1.7.2 - http://docs.jquery.com/Downloading_jQuery
     * Hashchange 1.3 - https://github.com/cowboy/jquery-hashchange/tree/v1.3
-	* Ajax Loading Animations - http://ajaxload.info/
+    * Ajax Loading Animations - http://ajaxload.info/
 
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Basic Usage:
 =-=-=-=-=-=-
-	1) Put this line in <head>: 
-		<script type="text/javascript" src="jquery.js"></script>
-	2) Followed by this line in <head>: 
-		<script type="text/javascript" src="jquery.hashchange.js"></script>
-	3) Followed by this line in <head>: 
-		<script type="text/javascript" src="ajaxml.js"></script>
-	4) For any hyperlink to be ajaxified add attribute into: 
-		<a href="/example.html" into="some_target">Ajaxify This</a>
-	5) Put the id of the reciever the same as the value of into: 
-		<div id="some_target">Response will be placed here</div>
+    1) Put this line in <head>: 
+        <script type="text/javascript" src="jquery.js"></script>
+    2) Followed by this line in <head>: 
+        <script type="text/javascript" src="jquery.hashchange.js"></script>
+    3) Followed by this line in <head>: 
+        <script type="text/javascript" src="ajaxml.js"></script>
+    4) For any hyperlink to be ajaxified add attribute into: 
+        <a href="/example.html" into="some_target">Ajaxify This</a>
+    5) Put the id of the reciever the same as the value of into: 
+        <div id="some_target">Response will be placed here</div>
+
+
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Full Documentation and Live Demo:
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
