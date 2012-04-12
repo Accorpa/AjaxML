@@ -8,13 +8,21 @@
 * download: https://github.com/Accorpa/AjaxML
 */
 
-This plugin is a javascript Progress Bar with the following features:
+Declarative Ajax Toolkit:
+=-=-=-=-=-=-=-=-=-=-=-=-=
+	AjaxML is a set of functions that allow you to declare Ajax behaviour in your web pages with as little coding as possible. In fact, if you have no special needs beyond basic XHR use, you need no code at all.
+	
+	The idea is simple. A set of attributes added to your web page elements specify what you need to be done. The javascript code is automatically injected once you include "ajaxml.js" in the page.
 
-    1) Overflow: enables the current value of the progress bar to exceed its defined maximum value
-    2) Dynamically change any property
-    3) Toggle between normal mode and infinite mode
-    4) Control of labels position, font size, and color
-    5) Events binding ability
+Issues:
+=-=-=-=
+	AjaxML can be seen as a small addition to HTML. Although currently reported as invalid in strict XHTML, no exceptions will be raised.
+
+	The first implementation uses (and thus requires) jQuery for cross-browser compatibility. Support for other libraries is being considered.
+
+	The first implementation handles HTML data. It does not automatically handle JSON, XML, or XSL transformations on returned data. These are being developed and tested and will be released shortly.
+
+Special handling for Ajax-enabled widgets is also being developed. The first widgets to be supported will be jQuery UI components. More will be coming shortly.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Dependencies:
 =-=-=-=-=-=-=
