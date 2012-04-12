@@ -73,13 +73,13 @@ function evalOnComplete(sender, targetid){
 	}	
 }
 
-function evalOnError(sender, targetid){
+function evalOnError(sender, targetid, jqXHR, textStatus, errorThrown){
 	var js = sender.attr('onError');
 	var senderid = sender.attr('id');
 	if (!senderid || (senderid == 'self')) senderid = targetid;
 	
 	if (typeof eval(js) == 'function') {
-		eval( js + "(senderid,targetid)");
+		eval( js + "(senderid,targetid,jqXHR.status,jqXHR.statusText,jqXHR.responseText)");
 	}	
 }
 
@@ -469,7 +469,7 @@ function ajaxify() {
 						form.attr('id', form.attr('bind'));
 
 					ajaxError(form.attr('id'));
-					evalOnError( form, form.attr('into') );
+					evalOnError( form, form.attr('into'), jqXHR, textStatus, errorThrown );
 					
 					ajaxCleanUp(form.attr('id'), form.attr('bind'));
 					
@@ -542,7 +542,7 @@ function loadInto(element, url, method, source_element) {
   		},
 		error: function(jqXHR, textStatus, errorThrown){
 			ajaxError( element );
-			evalOnError( source_element, element );
+			evalOnError( source_element, element, jqXHR, textStatus, errorThrown );
 			
 			return false;
   		}
